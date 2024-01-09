@@ -68,7 +68,7 @@ public static class Puppeteer
     }
     public static bool OnCheckPuppet(PlayerControl killer, PlayerControl target)
     {
-        if (target.Is(CustomRoles.Needy) || target.Is(CustomRoles.Lazy) || Medic.ProtectList.Contains(target.PlayerId)) return false;
+        if Medic.ProtectList.Contains(target.PlayerId)) return false;
             return killer.CheckDoubleTrigger(target, () => 
             {         
                 PuppeteerList[target.PlayerId] = killer.PlayerId;
