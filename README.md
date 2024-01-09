@@ -3,7 +3,7 @@
 
 <br>
 
-<img align="left" alt="Cover" src="Resources/Background/TOHE-Background-Old.jpg" width="50%" height="300" /> 
+<img align="left" alt="Cover" src="Resources/Background/Town-of-Betrayal.png" width="100%" height="100" /> 
 
 <p align="right">
   
