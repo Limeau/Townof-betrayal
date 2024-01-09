@@ -3,7 +3,7 @@
 
 <br>
 
-<img align="left" alt="Cover" src="Resources/Background/Town-of-Betrayal.png" width="65%" height="65%" /> 
+<img align="left" alt="Cover" src="Resources/Background/Town-of-Betrayal.png" width="80%" height="80%" /> 
 
 <p align="right">
   
