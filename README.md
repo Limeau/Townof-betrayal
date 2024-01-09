@@ -1,5 +1,5 @@
 
-<h1 align="center">Town of Betrayal</h1>
+<h1 align="center">Town of Betrayal 1.0.0</h1>
 
 <br>
 
