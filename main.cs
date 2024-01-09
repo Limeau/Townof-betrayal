@@ -19,7 +19,7 @@ using UnityEngine;
 [assembly: AssemblyVersion(TOHE.Main.PluginVersion)]
 namespace TOHE;
 
-[BepInPlugin(PluginGuid, "TOHE", PluginVersion)]
+[BepInPlugin(PluginGuid, "Town of Betrayal", PluginVersion)]
 [BepInIncompatibility("jp.ykundesu.supernewroles")]
 [BepInProcess("Among Us.exe")]
 public class Main : BasePlugin
@@ -27,8 +27,8 @@ public class Main : BasePlugin
     // == プログラム設定 / Program Config ==
     public const string OriginalForkId = "OriginalTOH";
 
-    public static readonly string ModName = "TOHE";
-    public static readonly string ForkId = "TOHE";
+    public static readonly string ModName = "Town of Betrayal";
+    public static readonly string ForkId = "Town of Betrayal";
     public static readonly string ModColor = "#ffc0cb";
     public static readonly bool AllowPublicRoom = true;
 
@@ -54,16 +54,16 @@ public class Main : BasePlugin
     public static readonly bool ShowUpdateButton = true;
 
     public static readonly bool ShowGitHubButton = true;
-    public static readonly string GitHubInviteUrl = "https://github.com/0xDrMoe/TownofHost-Enhanced";
+    public static readonly string GitHubInviteUrl = "https://github.com/Limeau/Townof-betrayal";
 
     public static readonly bool ShowDiscordButton = true;
-    public static readonly string DiscordInviteUrl = "https://discord.gg/tohe";
+    public static readonly string DiscordInviteUrl = "https://discord.gg/e8Qg6HqEW2";
 
-    public static readonly bool ShowWebsiteButton = true;
-    public static readonly string WebsiteInviteUrl = "https://tohre.dev";
+    public static readonly bool ShowWebsiteButton = false;
+    public static readonly string WebsiteInviteUrl = "https://github.com/Limeau/Townof-betrayal";
     
-    public static readonly bool ShowKofiButton = true;
-    public static readonly string kofiInviteUrl = "https://ko-fi.com/TOHEN";
+    public static readonly bool ShowKofiButton = false;
+    public static readonly string kofiInviteUrl = "N/A";
 
     public Harmony Harmony { get; } = new Harmony(PluginGuid);
     public static Version version = Version.Parse(PluginVersion);
