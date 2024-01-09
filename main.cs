@@ -724,7 +724,7 @@ public enum CustomRoles
     Lawyer,
     Jackal,
     Poisoner,
-    NWitch,
+    Soloist,
     Innocent,
     Pelican,
     Revolutionist,
@@ -928,6 +928,7 @@ public enum CustomWinner
     NiceMini = CustomRoles.Mini,
     Doppelganger = CustomRoles.Doppelganger,
     Solsticer = CustomRoles.Solsticer,
+    Soloist = CustomRoles.Soloist,
 }
 public enum AdditionalWinners
 {
