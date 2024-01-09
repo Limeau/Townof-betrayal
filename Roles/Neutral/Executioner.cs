@@ -33,10 +33,11 @@ public static class Executioner
         "Role.Jester",
         "Role.Opportunist",
         "Role.Convict",
+        "Role.Phantom",
     };
     public static readonly CustomRoles[] CRoleChangeRoles =
     {
-        CustomRoles.CrewmateTOHE, CustomRoles.CyberStar, CustomRoles.Bodyguard, CustomRoles.Dictator, CustomRoles.Mayor, CustomRoles.Doctor, CustomRoles.Jester, CustomRoles.Opportunist, CustomRoles.Convict,
+        CustomRoles.CrewmateTOHE, CustomRoles.CyberStar, CustomRoles.Bodyguard, CustomRoles.Dictator, CustomRoles.Phantom, CustomRoles.Mayor, CustomRoles.Doctor, CustomRoles.Jester, CustomRoles.Opportunist, CustomRoles.Convict,
     };
 
     public static void SetupCustomOption()
