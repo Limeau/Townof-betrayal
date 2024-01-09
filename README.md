@@ -113,8 +113,7 @@ This project is licensed under the GNU General Public License version 3.0. For m
 To obtain an API token for this project, you must join our Discord server and open a ticket. Follow the steps below:
 
 1. **Join our Discord Server:**
-   https://discord.gg/tohe
-
+https://discord.gg/nDYmDXk6sZ
 2. **Open a Ticket:**
    Once you've joined the server, open a ticket and request an API token for TOHE API. Provide any necessary information as instructed in the ticket system.
 
