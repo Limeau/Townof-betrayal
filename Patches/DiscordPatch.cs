@@ -13,7 +13,7 @@ namespace TOHE.Patches
         private static string region = "";
         public static void Prefix([HarmonyArgument(0)] Activity activity)
         {
-            var details = $"TOHE v{Main.PluginDisplayVersion}";
+            var details = $"Town of Betrayal v{Main.PluginDisplayVersion}";
             activity.Details = details;
 
             try
@@ -38,10 +38,10 @@ namespace TOHE.Patches
                         if (lobbycode != "" && region != "")
                         {
                             if (GameStates.IsNormalGame)
-                                details = $"TOHE - {lobbycode} ({region})";
+                                details = $"Town of Betrayal - {lobbycode} ({region})";
 
                             else if (GameStates.IsHideNSeek)
-                                details = $"TOHE Hide & Seek - {lobbycode} ({region})";
+                                details = $"Town of Betrayal Hide & Seek - {lobbycode} ({region})";
                         }
 
                         activity.Details = details;
@@ -49,12 +49,12 @@ namespace TOHE.Patches
                     else
                     {
                         if (GameStates.IsNormalGame)
-                            details = $"TOHE v{Main.PluginDisplayVersion}";
+                            details = $"Town of Betrayal v{Main.PluginDisplayVersion}";
 
                         else if (GameStates.IsHideNSeek)
-                            details = $"TOHE v{Main.PluginDisplayVersion} - Hide & Seek";
+                            details = $"Town of Betrayal v{Main.PluginDisplayVersion} - Hide & Seek";
 
-                        else details = $"TOHE v{Main.PluginDisplayVersion}";
+                        else details = $"Town of Betrayal v{Main.PluginDisplayVersion}";
 
                         activity.Details = details;
                     }
@@ -65,7 +65,7 @@ namespace TOHE.Patches
             {
                 Logger.Error("Error in updating discord rpc", "DiscordPatch");
                 Logger.Exception(ex, "DiscordPatch");
-                details = $"TOHE v{Main.PluginDisplayVersion}";
+                details = $"Town of Betrayal v{Main.PluginDisplayVersion}";
                 activity.Details = details;
             }
         }
