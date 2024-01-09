@@ -17,7 +17,7 @@ public static class FireWorks
         WaitTime = 4,
         ReadyFire = 8,
         FireEnd = 16,
-        CanUseKill = Initial | FireEnd
+    
     }
 
     private static readonly int Id = 3200;
@@ -25,7 +25,7 @@ public static class FireWorks
 
     private static OptionItem FireWorksCount;
     private static OptionItem FireWorksRadius;
-    public static OptionItem CanKill;
+
 
     public static Dictionary<byte, int> nowFireWorksCount = new();
     private static Dictionary<byte, List<Vector3>> fireWorksPosition = new();
@@ -82,22 +82,16 @@ public static class FireWorks
         Logger.Info($"Player{playerId}:ReceiveRPC", "FireWorks");
     }
 
-    public static bool CanUseKillButton(PlayerControl pc)
-    {
-        //            Logger.Info($"FireWorks CanUseKillButton", "FireWorks");
-        if (pc.Data.IsDead) return false;
-        var canUse = false;
-        if ((state[pc.PlayerId] & FireWorksState.CanUseKill) != 0)
-        {
-            canUse = true;
-        }
-        if (CanKill.GetBool())
-        {
-            canUse = true;
-        }
-        //            Logger.Info($"CanUseKillButton:{canUse}", "FireWorks");
-        return canUse;
-    }
+
+    
+        //            
+        
+    
+        
+
+        
+                 
+    
 
     public static void ShapeShiftState(PlayerControl pc, bool shapeshifting)
     {
