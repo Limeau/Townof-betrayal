@@ -53,16 +53,7 @@ public static class Reverie
         if (!Main.ResetCamPlayerList.Contains(playerId))
             Main.ResetCamPlayerList.Add(playerId);
     }
-    public static void OnReportDeadBody()
-    {
-        foreach(var playerId in NowCooldown.Keys)
-        {
-            if (ResetCooldownMeeting.GetBool())
-            {
-                NowCooldown[playerId] = DefaultKillCooldown.GetFloat();
-            }
-        }
-    }
+   
     public static void SetKillCooldown(byte id) => Main.AllPlayerKillCooldown[id] = NowCooldown[id];
     public static void OnCheckMurder(PlayerControl killer,PlayerControl target)
     {
