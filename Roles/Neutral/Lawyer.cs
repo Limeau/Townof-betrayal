@@ -39,11 +39,12 @@ public static class Lawyer
         "Role.Mayor",
         "Role.Doctor",
         "Role.Phantom",
+        "Role.Pixie",
      //   CustomRoles.Crewmate.ToString(), CustomRoles.Jester.ToString(), CustomRoles.Opportunist.ToString(),
     };
     public static readonly CustomRoles[] CRoleChangeRoles =
     {
-        CustomRoles.CrewmateTOHE, CustomRoles.Jester, CustomRoles.Opportunist, CustomRoles.Convict, CustomRoles.CyberStar, CustomRoles.Bodyguard, CustomRoles.Dictator, CustomRoles.Mayor, CustomRoles.Doctor, CustomRoles.Phantom
+        CustomRoles.CrewmateTOHE, CustomRoles.Jester, CustomRoles.Opportunist, CustomRoles.Convict, CustomRoles.CyberStar, CustomRoles.Bodyguard, CustomRoles.Dictator, CustomRoles.Mayor, CustomRoles.Doctor, CustomRoles.Phantom, CustomRoles.Pixie
     };
 
     public static void SetupCustomOption()
