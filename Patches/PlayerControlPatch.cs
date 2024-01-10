@@ -369,9 +369,6 @@ class CheckMurderPatch
                 case CustomRoles.Necromancer: //必须在击杀发生前处理
                     if (!Necromancer.OnCheckMurder(killer, target)) return false;
                     break;
-                case CustomRoles.NWitch:
-                    if (!NWitch.OnCheckMurder(killer, target)) return false;
-                    break;
                 case CustomRoles.Shroud:
                     if (!Shroud.OnCheckMurder(killer, target)) return false;
                     break;
@@ -835,8 +832,6 @@ class CheckMurderPatch
         if (killer.Is(CustomRoles.Juggernaut) && target.Is(CustomRoles.Juggernaut))
             return false;
         if (killer.Is(CustomRoles.Werewolf) && target.Is(CustomRoles.Werewolf))
-            return false;
-        if (killer.Is(CustomRoles.NWitch) && target.Is(CustomRoles.NWitch))
             return false;
         if (killer.Is(CustomRoles.Shroud) && target.Is(CustomRoles.Shroud))
             return false;
@@ -2125,13 +2120,6 @@ class ReportDeadBodyPatch
                             __instance.Notify(Utils.ColorString(Utils.GetRoleColor(CustomRoles.Amnesiac), GetString("YouRememberedRole")));
                             tar.Notify(Utils.ColorString(Utils.GetRoleColor(CustomRoles.Amnesiac), GetString("RememberedYourRole")));
                         }
-                        if (Amnesiac.IncompatibleNeutralMode.GetValue() == 1)
-                        {
-                            NWitch.Add(__instance.PlayerId);
-                            __instance.RpcSetCustomRole(CustomRoles.NWitch);
-                            __instance.Notify(Utils.ColorString(Utils.GetRoleColor(CustomRoles.Amnesiac), GetString("YouRememberedRole")));
-                            tar.Notify(Utils.ColorString(Utils.GetRoleColor(CustomRoles.Amnesiac), GetString("RememberedYourRole")));
-                        }
                         if (Amnesiac.IncompatibleNeutralMode.GetValue() == 2)
                         {
                             Pursuer.Add(__instance.PlayerId);
@@ -2379,7 +2367,6 @@ class ReportDeadBodyPatch
         if (ParityCop.IsEnable) ParityCop.OnReportDeadBody();
         if (Doomsayer.IsEnable) Doomsayer.OnReportDeadBody();
         if (BallLightning.IsEnable) BallLightning.OnReportDeadBody();
-        if (NWitch.IsEnable) NWitch.OnReportDeadBody();
         if (Seeker.IsEnable) Seeker.OnReportDeadBody();
         if (Jailer.IsEnable) Jailer.OnReportDeadBody();
         if (Romantic.IsEnable) Romantic.OnReportDeadBody();
@@ -2869,9 +2856,6 @@ class FixedUpdateInNormalGamePatch
                     if (Puppeteer.IsEnable)
                         Puppeteer.OnFixedUpdate(player);
 
-                    if (NWitch.IsEnable)
-                        NWitch.OnFixedUpdate(player);
-
                     if (Shroud.IsEnable)
                         Shroud.OnFixedUpdate(player);
 
@@ -3245,11 +3229,6 @@ class FixedUpdateInNormalGamePatch
                     case CustomRoles.Puppeteer:
                         Mark.Append(Puppeteer.TargetMark(seer, target));
                         break;
-
-                    case CustomRoles.NWitch:
-                        Mark.Append(NWitch.TargetMark(seer, target));
-                        break;
-
                     case CustomRoles.Shroud:
                         Mark.Append(Shroud.TargetMark(seer, target));
                         break;

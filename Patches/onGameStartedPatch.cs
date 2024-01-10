@@ -321,7 +321,6 @@ internal class ChangeRoleSettings
             Tracefinder.Init();
             Devourer.Init();
             PotionMaster.Init();
-            NWitch.Init();
             Traitor.Init();
             Spiritualist.Init();
             Vulture.Init();
@@ -941,9 +940,6 @@ internal class SelectRolesPatch
                         break;
                     case CustomRoles.Traitor:
                         Traitor.Add(pc.PlayerId);
-                        break;
-                    case CustomRoles.NWitch:
-                        NWitch.Add(pc.PlayerId);
                         break;
                     case CustomRoles.Shroud:
                         Shroud.Add(pc.PlayerId);

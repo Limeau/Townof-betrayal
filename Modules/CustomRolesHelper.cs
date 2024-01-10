@@ -241,7 +241,6 @@ static class CustomRolesHelper
             CustomRoles.Werewolf => RoleTypes.Impostor,
             CustomRoles.Maverick => RoleTypes.Impostor,
             CustomRoles.Parasite => RoleTypes.Impostor,
-            CustomRoles.NWitch => RoleTypes.Impostor,
             CustomRoles.Necromancer => RoleTypes.Impostor,
             CustomRoles.Shroud => RoleTypes.Impostor,
             CustomRoles.Totocalcio => RoleTypes.Impostor,
@@ -405,7 +404,6 @@ static class CustomRolesHelper
             CustomRoles.Innocent or
             CustomRoles.Vulture or
             CustomRoles.Taskinator or
-            CustomRoles.NWitch or
             CustomRoles.Pursuer or
             CustomRoles.Revolutionist or
             CustomRoles.Provocateur or
@@ -515,7 +513,6 @@ static class CustomRolesHelper
             CustomRoles.Pursuer or
             CustomRoles.Shaman or
             CustomRoles.SoulCollector or
-            CustomRoles.NWitch or
             CustomRoles.CursedSoul or
             CustomRoles.Doomsayer or
             CustomRoles.Executioner or
@@ -554,7 +551,6 @@ static class CustomRolesHelper
             CustomRoles.Pursuer or
             CustomRoles.Shaman or
             CustomRoles.Taskinator or
-            CustomRoles.NWitch or
             CustomRoles.God or
             CustomRoles.Romantic or
             CustomRoles.VengefulRomantic or
@@ -744,7 +740,6 @@ static class CustomRolesHelper
             CustomRoles.Imitator or
             CustomRoles.Shaman or
             CustomRoles.Crewpostor or
-            CustomRoles.NWitch or
             CustomRoles.Shroud or
             CustomRoles.Wraith or
             CustomRoles.SoulCollector or
@@ -847,7 +842,6 @@ static class CustomRolesHelper
             CustomRoles.Arsonist or
             CustomRoles.Revolutionist or
             CustomRoles.Maverick or
-            CustomRoles.NWitch or
             CustomRoles.Pyromaniac or
             CustomRoles.Shroud or
             CustomRoles.Succubus or
@@ -893,7 +887,6 @@ static class CustomRolesHelper
             CustomRoles.Mario or
             CustomRoles.HexMaster or
             CustomRoles.Crewpostor or
-            CustomRoles.NWitch or
             CustomRoles.Wraith or
             CustomRoles.Parasite or
             CustomRoles.Terrorist or
@@ -1811,7 +1804,6 @@ static class CustomRolesHelper
            CustomRoles.HexMaster => CountTypes.HexMaster,
            //CustomRoles.Occultist => CountTypes.Occultist,
            CustomRoles.Necromancer => CountTypes.Necromancer,
-           CustomRoles.NWitch => CountTypes.NWitch,
            CustomRoles.Shroud => CountTypes.Shroud,
            CustomRoles.Werewolf => CountTypes.Werewolf,
            CustomRoles.Wraith => CountTypes.Wraith,
@@ -1877,7 +1869,6 @@ static class CustomRolesHelper
             CustomRoles.Werewolf => CustomWinner.Werewolf,
             CustomRoles.Necromancer => CustomWinner.Necromancer,
             CustomRoles.Huntsman => CustomWinner.Huntsman,
-            CustomRoles.NWitch => CustomWinner.Witch,
             CustomRoles.Juggernaut => CustomWinner.Juggernaut,
             CustomRoles.Infectious => CustomWinner.Infectious,
             CustomRoles.Virus => CustomWinner.Virus,
@@ -1920,7 +1911,6 @@ static class CustomRolesHelper
             CountTypes.HexMaster => CustomRoles.HexMaster,
             //CustomRoles.Occultist => CountTypes.Occultist,
             CountTypes.Necromancer => CustomRoles.Necromancer,
-            CountTypes.NWitch => CustomRoles.NWitch,
             CountTypes.Shroud => CustomRoles.Shroud,
             CountTypes.Werewolf => CustomRoles.Werewolf,
             CountTypes.Wraith => CustomRoles.Wraith,

@@ -16,9 +16,6 @@
     <ItemGroup>
         <EmbeddedResource Include=".\Resources\**" />
     </ItemGroup>
-	<ItemGroup>
-		<EmbeddedResource Include="token.env" />
-	</ItemGroup>
 	    
     <ItemGroup>
         <PackageReference Include="AmongUs.GameLibs.Steam" Version="2023.11.28" PrivateAssets="all" />

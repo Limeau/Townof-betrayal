@@ -2134,8 +2134,6 @@ public static class Options
 
         Taskinator.SetupCustomOption();
 
-        NWitch.SetupCustomOption();
-
         /*  SetupSingleRoleOptions(13900, TabGroup.NeutralRoles, CustomRoles.NWitch, 1, zeroOne: false);
           ControlCooldown = FloatOptionItem.Create(13902, "ControlCooldown", new(0f, 180f, 2.5f), 30f, TabGroup.NeutralRoles, false)
           .SetParent(CustomRoleSpawnChances[CustomRoles.NWitch])

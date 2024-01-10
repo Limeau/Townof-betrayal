@@ -125,9 +125,7 @@ class ExileControllerWrapUpPatch
 
             //Executioner check win
             if (Executioner.CheckExileTarget(exiled, DecidedWinner))
-            {
                 DecidedWinner = true;
-            }
 
             //Terrorist check win
             if (role.Is(CustomRoles.Terrorist))

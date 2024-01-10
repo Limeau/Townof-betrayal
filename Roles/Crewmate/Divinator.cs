@@ -369,7 +369,6 @@ public static class Divinator
                 => "Result27",
 
                 CustomRoles.Puppeteer or
-                CustomRoles.NWitch or
                 CustomRoles.Deputy or
                 CustomRoles.Transporter or
                 CustomRoles.Twister or
