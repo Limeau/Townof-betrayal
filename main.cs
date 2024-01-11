@@ -37,9 +37,9 @@ public class Main : BasePlugin
     public const string DebugKeySalt = "59687b";
 
     public static ConfigEntry<string> DebugKeyInput { get; private set; }
-    public static readonly string MainMenuText = " ";
+    public static readonly string MainMenuText = "Town of Betrayal";
 
-    public const string PluginGuid = "com.0xdrmoe.townofhostenhanced";
+    public const string PluginGuid = "com.Limeau.townofbetrayal";
     public const string PluginVersion = "1.0.0";
     public const string PluginDisplayVersion = "1.0.0";
     public static readonly string SupportedVersionAU = "2023.10.24"; // also 2023.11.28
@@ -51,7 +51,7 @@ public class Main : BasePlugin
 
     public static bool hasAccess = true;
 
-    public static readonly bool ShowUpdateButton = true;
+    public static readonly bool ShowUpdateButton = false;
 
     public static readonly bool ShowGitHubButton = true;
     public static readonly string GitHubInviteUrl = "https://github.com/Limeau/Townof-betrayal";
