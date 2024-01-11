@@ -179,6 +179,7 @@ public class PlayerGameOptionsSender : GameOptionsSender
             case CustomRoles.Investigator:
             case CustomRoles.Counterfeiter:
             case CustomRoles.Witness:
+            case CustomRoles.soloist;
             case CustomRoles.Succubus:
             case CustomRoles.CursedSoul:
             case CustomRoles.Admirer:
