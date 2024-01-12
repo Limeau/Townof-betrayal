@@ -75,11 +75,6 @@ public static class MainMenuManagerPatch
         leftPanel.gameObject.FindChild<SpriteRenderer>("Divider").enabled = false;
         leftPanel.GetComponentsInChildren<SpriteRenderer>(true).Where(r => r.name == "Shine").ToList().ForEach(r => r.enabled = false);
 
-        GameObject splashArt = new("SplashArt");
-        splashArt.transform.position = new Vector3(0, 0f, 600f); //= new Vector3(0, 0.40f, 600f);
-        var spriteRenderer = splashArt.AddComponent<SpriteRenderer>();
-        spriteRenderer.sprite = Utils.LoadSprite("TOHE.Resources.Background.tob-background.png", 600f);
-
 
         //__instance.playLocalButton.inactiveSprites.GetComponent<SpriteRenderer>().color = new Color(0.1647f, 0f, 0.7765f);
         //__instance.PlayOnlineButton.inactiveSprites.GetComponent<SpriteRenderer>().color = new Color(0.1647f, 0f, 0.7765f);
