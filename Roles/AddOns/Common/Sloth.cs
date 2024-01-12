@@ -12,7 +12,7 @@ public static class Sloth
     public static void SetupCustomOption()
     {
         SetupAdtRoleOptions(Id, CustomRoles.Sloth, canSetNum: true, tab: TabGroup.Addons);
-        OptionSpeed = FloatOptionItem.Create(Id + 10, "SlothSpeed", new(0.25f, 5f, 0.25f), 2.5f, TabGroup.Addons, false)
+        OptionSpeed = FloatOptionItem.Create(Id + 10, "SlothSpeed", new(0.25f, 5f, 0.25f), 0.5f, TabGroup.Addons, false)
             .SetParent(CustomRoleSpawnChances[CustomRoles.Sloth])
             .SetValueFormat(OptionFormat.Multiplier);
     }
