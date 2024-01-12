@@ -13,13 +13,12 @@ public static class Doppelganger
 
     private static OptionItem KillCooldown;
     public static OptionItem MaxSteals;
-    public static OptionItem CanVent;
 
     public static Dictionary<byte, string> DoppelVictim = new();
     public static Dictionary<byte, GameData.PlayerOutfit> DoppelPresentSkin = new();
     public static Dictionary<byte, int> TotalSteals = new();
 
-    public static void CanUseVent(PlayerControl player)
+
     public static void SetupCustomOption()
     {
         SetupSingleRoleOptions(Id, TabGroup.OtherRoles, CustomRoles.Doppelganger, 1, zeroOne: false);
@@ -178,9 +177,4 @@ public static class Doppelganger
     }
 
     public static string GetStealLimit(byte playerId) => Utils.ColorString(TotalSteals[playerId] < MaxSteals.GetInt() ? Utils.GetRoleColor(CustomRoles.Doppelganger).ShadeColor(0.25f) : Color.gray, TotalSteals.TryGetValue(playerId, out var stealLimit) ? $"({MaxSteals.GetInt() - stealLimit})" : "Invalid");
-}
-        bool Doppelganger_canUse = CanVent.GetBool();
-        DestroyableSingleton<HudManager>.Instance.ImpostorVentButton.ToggleVisible(Doppelganger_canUse && !player.Data.IsDead);
-        player.Data.Role.CanVent = Doppelganger_canUse;
-    }
 }
