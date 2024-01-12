@@ -15,6 +15,7 @@ public static class Pursuer
     public static Dictionary<byte, int> SeelLimit = new();
     public static OptionItem PursuerSkillCooldown;
     public static OptionItem PursuerSkillLimitTimes;
+    public static OptionItem CanVent 
     public static void SetupCustomOption()
     {
         Options.SetupRoleOptions(Id, TabGroup.NeutralRoles, CustomRoles.Pursuer);
@@ -133,6 +134,11 @@ public static class Pursuer
                     target.SetRealKiller(killer);
                     Logger.Info($"赝品商 {killer.GetRealName()} 的客户 {target.GetRealName()} 因不带刀自杀", "Pursuer");
                 }
+
+             bool Pursuer_canUse = CanVent.GetBool();
+        DestroyableSingleton<HudManager>.Instance.ImpostorVentButton.ToggleVisible(Pursuer_canUse && !player.Data.IsDead);
+        player.Data.Role.CanVent = Pursuer_canUse;
+    }
             }
     }
 }
