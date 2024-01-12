@@ -74,6 +74,7 @@ public static class Pursuer
     public static bool CanBeClient(PlayerControl pc) => pc != null && pc.IsAlive() && !GameStates.IsMeeting && !IsClient(pc.PlayerId);
     public static bool CanSeel(byte playerId) => playerIdList.Contains(playerId) && SeelLimit.TryGetValue(playerId, out int x) && x > 0;
     public static void SeelToClient(PlayerControl pc, PlayerControl target)
+    public static void CanUseVent(PlayerControl player)
     {
         if (pc == null || target == null || !pc.Is(CustomRoles.Pursuer)) return;
 
