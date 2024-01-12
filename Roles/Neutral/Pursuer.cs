@@ -136,9 +136,8 @@ public static class Pursuer
                     Logger.Info($"赝品商 {killer.GetRealName()} 的客户 {target.GetRealName()} 因不带刀自杀", "Pursuer");
                 }
 
-                //bool Pursuer_canUse = CanVent.GetBool();
-               // DestroyableSingleton<HudManager>.Instance.ImpostorVentButton.ToggleVisible(Pursuer_canUse && !killer.Data.IsDead);
-                //player.Data.Role.CanVent = Pursuer_canUse;
-            }
+                bool Pursuer_canUse = CanVent.GetBool();
+        DestroyableSingleton<HudManager>.Instance.ImpostorVentButton.ToggleVisible(Pursuer_canUse && !player.Data.IsDead);
+        player.Data.Role.CanVent = Pursuer_canUse;
     }
 }
