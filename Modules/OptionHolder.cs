@@ -2287,6 +2287,8 @@ public static class Options
 
         Jackal.SetupCustomOption();
 
+        Soloist.SetupCustomOption();
+
         Jinx.SetupCustomOption();
 
         Juggernaut.SetupCustomOption();
