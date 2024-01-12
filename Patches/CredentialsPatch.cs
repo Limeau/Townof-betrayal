@@ -84,7 +84,7 @@ public static class Credentials
 #endif
 
 #if DEBUG
-            Main.credentialsText += $"\r\n<color=#ffc0cb>Debug:</color><color=#f34c50>{ThisAssembly.Git.Branch}</color>(<color=#ffc0cb>{ThisAssembly.Git.Commit}</color>)";
+          //  Main.credentialsText += $"\r\n<color=#ffc0cb>Debug:</color><color=#f34c50>{ThisAssembly.Git.Branch}</color>(<color=#ffc0cb>{ThisAssembly.Git.Commit}</color>)";
             Main.credentialsText += $"\r\n<color=#a54aff>By <color=#ffc0cb>Dailyhare</color> <color=#11ff11>Lime</color> & <color=#C092C0>sleepyfor</color></color>";
             buildtype = "Debug";
 #endif
@@ -148,8 +148,9 @@ public static class Credentials
             var logoTransform = logoObject.transform;
             ToheLogo = logoObject.AddComponent<SpriteRenderer>();
             logoTransform.parent = rightpanel;
-            logoTransform.localPosition = new(-0.16f, 0f, 1f); //new(0f, 0.3f, 1f); new(0f, 0.15f, 1f);
+            logoTransform.localPosition = new(0.02f, 0.02f, 1f);
             logoTransform.localScale *= 1.2f;
+            ToheLogo.sprite = Utils.LoadSprite("TOHE.Resources.Background.tob.png", 100);
 
             if (!Options.IsLoaded)
             {
