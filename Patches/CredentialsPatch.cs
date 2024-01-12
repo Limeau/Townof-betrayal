@@ -85,7 +85,7 @@ public static class Credentials
 
 #if DEBUG
             Main.credentialsText += $"\r\n<color=#ffc0cb>Debug:</color><color=#f34c50>{ThisAssembly.Git.Branch}</color>(<color=#ffc0cb>{ThisAssembly.Git.Commit}</color>)";
-            Main.credentialsText += $"\r\n<color=#a54aff>By <color=#ffc0cb>KARPED1EM</color> & </color><color=#f34c50>Moe</color>";
+            Main.credentialsText += $"\r\n<color=#a54aff>By <color=#ffc0cb>Dailyhare</color> <color=#11ff11>Lime</color> & <color=#C092C0>sleepyfor</color></color>";
             buildtype = "Debug";
 #endif
             Logger.Info($"v{Main.PluginVersion}, {buildtype}:{ThisAssembly.Git.Branch}:({ThisAssembly.Git.Commit}), link [{ThisAssembly.Git.RepositoryUrl}], dirty: [{ThisAssembly.Git.IsDirty}]", "TOHE version");

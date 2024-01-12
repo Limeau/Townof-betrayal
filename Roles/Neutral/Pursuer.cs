@@ -1,4 +1,5 @@
 ﻿using Hazel;
+using MS.Internal.Xml.XPath;
 using System.Collections.Generic;
 using TOHE.Modules;
 using UnityEngine;
@@ -75,10 +76,10 @@ public static class Pursuer
     public static void SeelToClient(PlayerControl pc, PlayerControl target)
     {
         if (pc == null || target == null || !pc.Is(CustomRoles.Pursuer)) return;
-        
+
         SeelLimit[pc.PlayerId]--;
         SendRPC(pc.PlayerId);
-        
+
         if (!clientList.ContainsKey(pc.PlayerId))
             clientList.Add(pc.PlayerId, new());
 
@@ -135,10 +136,9 @@ public static class Pursuer
                     Logger.Info($"赝品商 {killer.GetRealName()} 的客户 {target.GetRealName()} 因不带刀自杀", "Pursuer");
                 }
 
-             bool Pursuer_canUse = CanVent.GetBool();
-        DestroyableSingleton<HudManager>.Instance.ImpostorVentButton.ToggleVisible(Pursuer_canUse && !player.Data.IsDead);
-        player.Data.Role.CanVent = Pursuer_canUse;
-    }
+                //bool Pursuer_canUse = CanVent.GetBool();
+               // DestroyableSingleton<HudManager>.Instance.ImpostorVentButton.ToggleVisible(Pursuer_canUse && !killer.Data.IsDead);
+                //player.Data.Role.CanVent = Pursuer_canUse;
             }
     }
 }

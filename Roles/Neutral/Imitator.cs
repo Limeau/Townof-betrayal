@@ -97,6 +97,9 @@ public static class Imitator
                 case CustomRoles.Jackal:
                     Jackal.Add(killer.PlayerId);
                     break;
+                case CustomRoles.Soloist:
+                    Soloist.Add(killer.PlayerId);
+                    break;
                 case CustomRoles.HexMaster:
                     HexMaster.Add(killer.PlayerId);
                     break;

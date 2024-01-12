@@ -1077,6 +1077,9 @@ internal static class RPC
             case CustomRoles.Sidekick:
                 Sidekick.Add(targetId);
                 break;
+            case CustomRoles.Soloist:
+                Soloist.Add(targetId);
+                break;
             case CustomRoles.Bandit:
                 Bandit.Add(targetId);
                 break;

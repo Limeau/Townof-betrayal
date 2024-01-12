@@ -10,7 +10,7 @@ namespace TOHE.Roles.Neutral
 {
     public static class Soloist
     {
-        private static readonly int Id = 93892;
+        private static readonly int Id = 95600;
         public static List<byte> playerIdList = new();
         public static bool IsEnable = false;
         public static OptionItem HasImpostorVision;
@@ -22,8 +22,7 @@ namespace TOHE.Roles.Neutral
         public static void SetupCustomOption()
         {
 
-            Options.SetupRoleOptions(Id, TabGroup.NeutralRoles, CustomRoles.Soloist, zeroOne: false);
-
+            SetupRoleOptions(Id, TabGroup.NeutralRoles, CustomRoles.Soloist, zeroOne: false);
             KillCooldown = FloatOptionItem.Create(Id + 10, "KillCooldown", new(0f, 180f, 2.5f), 20f, TabGroup.NeutralRoles, false).SetParent(CustomRoleSpawnChances[CustomRoles.Soloist])
                  .SetValueFormat(OptionFormat.Seconds);
             CanVent = BooleanOptionItem.Create(Id + 11, "CanVent", true, TabGroup.NeutralRoles, false).SetParent(CustomRoleSpawnChances[CustomRoles.Soloist]);

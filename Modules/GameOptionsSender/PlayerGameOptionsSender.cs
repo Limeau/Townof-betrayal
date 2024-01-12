@@ -4,6 +4,7 @@ using Hazel;
 using Il2CppInterop.Runtime.InteropTypes.Arrays;
 using Il2CppSystem.Linq;
 using InnerNet;
+using Sentry;
 using TOHE.Roles.AddOns.Common;
 using TOHE.Roles.Crewmate;
 using TOHE.Roles.Impostor;
@@ -179,7 +180,6 @@ public class PlayerGameOptionsSender : GameOptionsSender
             case CustomRoles.Investigator:
             case CustomRoles.Counterfeiter:
             case CustomRoles.Witness:
-            case CustomRoles.soloist;
             case CustomRoles.Succubus:
             case CustomRoles.CursedSoul:
             case CustomRoles.Admirer:
@@ -319,6 +319,9 @@ public class PlayerGameOptionsSender : GameOptionsSender
                 break;
             case CustomRoles.Glitch:
                 Glitch.ApplyGameOptions(opt);
+                break;
+            case CustomRoles.Soloist:
+                Soloist.ApplyGameOptions(opt);
                 break;
             case CustomRoles.Shroud:
                 Shroud.ApplyGameOptions(opt);

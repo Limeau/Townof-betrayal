@@ -228,6 +228,7 @@ internal class ChangeRoleSettings
             Executioner.Init();
             Lawyer.Init();
             Jackal.Init();
+            Soloist.Init();
             Sidekick.Init();
             Bandit.Init();
             Doppelganger.Init();
@@ -665,6 +666,9 @@ internal class SelectRolesPatch
                         break;
                     case CustomRoles.Sidekick:
                         Sidekick.Add(pc.PlayerId);
+                        break;
+                    case CustomRoles.Soloist:
+                        Soloist.Add(pc.PlayerId);
                         break;
                     case CustomRoles.Bandit:
                         Bandit.Add(pc.PlayerId);

@@ -914,6 +914,9 @@ static class ExtendedPlayerControl
             case CustomRoles.Jackal:
                 Jackal.SetKillCooldown(player.PlayerId);
                 break;
+            case CustomRoles.Soloist:
+                Soloist.SetKillCooldown(player.PlayerId);
+                break;
             case CustomRoles.Sidekick:
                 Sidekick.SetKillCooldown(player.PlayerId);
                 break;

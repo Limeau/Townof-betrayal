@@ -2275,6 +2275,8 @@ public static class Options
 
         BloodKnight.SetupCustomOption();
 
+        Soloist.SetupCustomOption();
+
         Gamer.SetupCustomOption();
 
         Glitch.SetupCustomOption();
@@ -2286,8 +2288,6 @@ public static class Options
         Infectious.SetupCustomOption();
 
         Jackal.SetupCustomOption();
-
-        Soloist.SetupCustomOption();
 
         Jinx.SetupCustomOption();
 

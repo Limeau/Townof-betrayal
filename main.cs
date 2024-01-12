@@ -793,6 +793,7 @@ public enum CustomRoles
     Madmate,
     Watcher,
     Flash,
+    Sloth,
     Torch,
     Seer,
     Brakar,
