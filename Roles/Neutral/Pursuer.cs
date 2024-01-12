@@ -15,7 +15,7 @@ public static class Pursuer
     public static Dictionary<byte, int> SeelLimit = new();
     public static OptionItem PursuerSkillCooldown;
     public static OptionItem PursuerSkillLimitTimes;
-    public static OptionItem CanVent 
+    public static OptionItem CanVent;
     public static void SetupCustomOption()
     {
         Options.SetupRoleOptions(Id, TabGroup.NeutralRoles, CustomRoles.Pursuer);
