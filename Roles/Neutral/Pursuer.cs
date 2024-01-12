@@ -1,5 +1,4 @@
-﻿using Hazel;
-using MS.Internal.Xml.XPath;
+using Hazel;
 using System.Collections.Generic;
 using TOHE.Modules;
 using UnityEngine;
@@ -16,7 +15,6 @@ public static class Pursuer
     public static Dictionary<byte, int> SeelLimit = new();
     public static OptionItem PursuerSkillCooldown;
     public static OptionItem PursuerSkillLimitTimes;
-    public static OptionItem CanVent;
     public static void SetupCustomOption()
     {
         Options.SetupRoleOptions(Id, TabGroup.NeutralRoles, CustomRoles.Pursuer);
@@ -74,13 +72,12 @@ public static class Pursuer
     public static bool CanBeClient(PlayerControl pc) => pc != null && pc.IsAlive() && !GameStates.IsMeeting && !IsClient(pc.PlayerId);
     public static bool CanSeel(byte playerId) => playerIdList.Contains(playerId) && SeelLimit.TryGetValue(playerId, out int x) && x > 0;
     public static void SeelToClient(PlayerControl pc, PlayerControl target)
-    public static void CanUseVent(PlayerControl player)
     {
         if (pc == null || target == null || !pc.Is(CustomRoles.Pursuer)) return;
-
+        
         SeelLimit[pc.PlayerId]--;
         SendRPC(pc.PlayerId);
-
+        
         if (!clientList.ContainsKey(pc.PlayerId))
             clientList.Add(pc.PlayerId, new());
 
@@ -136,9 +133,6 @@ public static class Pursuer
                     target.SetRealKiller(killer);
                     Logger.Info($"赝品商 {killer.GetRealName()} 的客户 {target.GetRealName()} 因不带刀自杀", "Pursuer");
                 }
-
-                bool Pursuer_canUse = CanVent.GetBool();
-        DestroyableSingleton<HudManager>.Instance.ImpostorVentButton.ToggleVisible(Pursuer_canUse && !player.Data.IsDead);
-        player.Data.Role.CanVent = Pursuer_canUse;
+            }
     }
 }
