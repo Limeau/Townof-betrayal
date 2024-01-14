@@ -11,7 +11,6 @@ public static class Artist
     public static bool IsEnable = false;
 
     private static OptionItem KillCooldown;
-    private static OptionItem CamoCooldown;
     private static OptionItem CanVent
     private static OptionItem HasImpostorVision;
 
@@ -22,10 +21,6 @@ public static class Artist
     {
         Options.SetupRoleOptions(Id, TabGroup.Neutral, CustomRoles.Artist);
         SetupSingleRoleOptions(Id, TabGroup.NeutralRoles, CustomRoles.Artist, 1, zeroOne: false);
-        CamoCooldown = FloatOptionItem.Create(Id + 10, "CamoCooldown", new(1f, 180f, 1f), 25f, TabGroup.NeutralRoles, false).SetParent(Options.CustomRoleSpawnChances[CustomRoles.Artist])
-                .SetValueFormat(OptionFormat.Seconds);
-        CamoDuration = FloatOptionItem.Create(Id + 11, "CamoDuration", new(1f, 180f, 1f), 10f, TabGroup.NeutralRoles, false).SetParent(Options.CustomRoleSpawnChances[CustomRoles.Artist])
-                .SetValueFormat(OptionFormat.Seconds);
         HasImpostorVision = BooleanOptionItem.Create(Id + 12, "ImpostorVision", true, TabGroup.NeutralRoles, false).SetParent(CustomRoleSpawnChances[CustomRoles.Artist]);
         CanVent = BooleanOptionItem.Create(Id + 13, "CanVent", true, TabGroup.NeutralRoles, false).SetParent(CustomRoleSpawnChances[CustomRoles.Artist]);
     }
