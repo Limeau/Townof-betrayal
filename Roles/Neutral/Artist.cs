@@ -38,7 +38,7 @@ public static class Artist
     {
         playerIdList.Add(playerId);
         IsEnable = true;
-        TotalSteals.Add(playerId, 0);
+        TotalUses.Add(playerId, 0);
         if (playerId == PlayerControl.LocalPlayer.PlayerId && Main.nickName.Length != 0) CamoPlayer[playerId] = Main.nickName;
         else CamoPlayer[playerId] = Utils.GetPlayerById(playerId).Data.PlayerName;
 
