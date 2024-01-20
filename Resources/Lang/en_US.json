@@ -369,6 +369,7 @@
   "Oiiai": "OIIAI",
   "Influenced": "Influenced",
   "Silent": "Silent",
+  "Artist": "Artist";
   "Prefix.Ntr": "Neptune ",
   "Prefix.Watcher": "Watcher ",
   "Prefix.Overclocked": "Overclocked ",
@@ -399,6 +400,7 @@
   "Prefix.Unreportable": "Disregarded ",
   "Prefix.Rogue": "Rogue ",
   "Prefix.Lucky": "Lucky ",
+  "Prefix.Sloth": "Sloth"
   "Prefix.DoubleShot": "Double Shot ",
   "Prefix.Rascal": "Rascal ",
   "Prefix.Gravestone": "Gravestone ",
@@ -523,7 +525,8 @@
   "SniperInfo": "Snipe players from a distance by shifting",
   "UndertakerInfo": "Teleport dead body to a marked location",
   "EvilTrackerInfo": "Track players by shifting",
-  "SoloistInfo": "Kill everyone to win"
+  "SoloistInfo": "Kill everyone to win",
+  "ArtistInfo"; "Kill and camoflauge players to win",
   "AntiAdminerInfo": "Know when players are near devices",
   "SansInfo": "With each kill you make, your cooldown decreases",
   "BomberInfo": "Shapeshift to explode",
@@ -820,6 +823,7 @@
   "BoobyTrapInfoLong": "(Impostors):\nAs the Trapster, your main method of killing is by body reports.\nWhen someone tries to report a body you killed, they'll die.",
   "CapitalismInfoLong": "(Impostors):\nCapitalists can add a short task to a player by pressing the kill button. Note: using this ability on players who have no tasks or have completed tasks will not take effect.",
   "GangsterInfoLong": "(Impostors):\nThe Gangster can attempt to recruit a player to a Madmate by pressing the kill button. If the recruitment is successful, both the Gangster and the target will see the shield animation on each other as a reminder (only visible to each other). The remaining number of available recruits is displayed next to the Gangster's name (the max is set by the host). If the Gangster tries to recruit players who cannot be recruited, such as neutrals or some special crews, they will kill the target normally instead. When the Gangster has no remaining recruitments, they can only make normal kills from that point on.",
+  "ArtistInfoLong": "(Neutrals):\nAs the artist, you may paint players or kill them. Painting players will shift their appearance into a completely randomized appearance. This makes it easier for killing.",
   "CleanerInfoLong": "(Impostors):\nCleaner can press the Report button to clean up any dead body they come across (including those they kill). If the cleanup is successful, the Cleaner will see a shield animation on their body as a reminder (only visible to himself). The cleaned up body cannot be reported (including bait's).",
   "BallLightningInfoLong": "(Impostors):\nAs the Lightning, you cannot kill normally. Instead, your kill button quantizes targets, which activates after a delay, causing the next person they come into contact with to kill them. Those who are actively quantized show a「■」next to their name. Additionally, those who have been quantized die if they survive until the end of a meeting. There is a setting to quantize your killer.",
   "GreedierInfoLong": "(Impostors):\nGreedy kills with odd and even kills will have different kill cooldowns. Greedy's kill cooldown is reset every meeting, and Greedy's first kill is always an odd kill.",
@@ -1036,6 +1040,7 @@
   "ReboundInfoLong": "(Add-ons):\nWith the Rebound add-on, if a Guesser successfully guessed you or a Judge successfully judged you, they will die instead.\nIf a player with Double Shot guesses you correctly, they will die instantly.",
   "MundaneInfoLong": "(Add-ons):\nAs Mundane, you can only guess after all your tasks has been finished.",
   "KnightedInfoLong": "(Add-ons):\nWhen a Monarch knights someone, they get an extra vote.",
+  "SlothInfoLong": "(Add-ons):\nAs the Sloth, you move slower.",
   "UnreportableInfoLong": "(Add-ons):\nWith the Disregarded add-on, your corpse cannot be reported.",
   "ContagiousInfoLong": "(Betrayal Add-ons):\nWhen the Virus infects you, you become contagious.\nContagious players are on the Virus team.\n\nWhether or not you die after a meeting depends on the settings for the Virus.",
   "RogueInfoLong": "(Betrayal Add-ons):\nAs the Rogue, you work against your team and work with other Rogues.\n\nYou cannot win with your original team.",
