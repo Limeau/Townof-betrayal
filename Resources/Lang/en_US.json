@@ -1005,7 +1005,7 @@
   "HexMasterInfoLong": "(Neutrals):\nAs the Hex Master, you can hex players or kill them.\nHexing a player works the same as spelling as a Spellcaster.",
   "WraithInfoLong": "(Neutrals):\nAs the Wraith, you can vent to temporarily Vanish. You will still appear visible on your screen. Vent again to become visible. You win if you are the last player remaining.",
   "JinxInfoLong": "(Neutrals):\nAs the Jinx, whenever you are attacked, you jinx them, resulting in them dying to a jinx.\nThis has limited uses.\n\nKill off everyone to win.",
-  "SoloistInfoLong": "(Neutrals):\nAs the Soloist, you must kill everyone to win. You have no teammates."
+  "SoloistInfoLong": "(Neutrals):\nAs the Soloist, you must kill everyone to win. You have no teammates.
   "PotionMasterInfoLong": "(Neutrals):\nAs the Potion Master, you have three potions assigned to three different actions.\n\nSingle click: Reveal role\nDouble click: Kill\nMap: Sabotage\n\nThe reveal potion has a limit.\nWhen you run out, the kill buttons defaults to killing.",
   "NecromancerInfoLong": "(Neutrals):\nAs the Necromancer, you win when you're the last one standing.\nAdditionally, when someone tries to kill you, the kill will be blocked and you will be teleported to a random vent. You will have a limited time to kill your killer. If you succeed to do so, you live. If the time runs out before you kill your killer, you die permanately. If you try to kill someone else other than your killer, you will die.",
   "LastImpostorInfoLong": "(Add-ons):\nThis effect is given to the last surviving Impostor. Reduces their kill cooldown.",
