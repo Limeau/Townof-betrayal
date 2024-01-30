@@ -112,5 +112,8 @@ public static class DevManager
         DevUserList.Add(new(code: "chillybead#3274", color: "#ffbbbb", tag: "Tester", isUp: true, isDev: false, deBug: true, colorCmd: false, upName: "RiRi"));
         DevUserList.Add(new(code: "awayfluid#4702", color: "#dd91b2", tag: "Tester", isUp: true, isDev: false, deBug: true, colorCmd: false, upName: "tasha"));
     }
+
+    public static bool IsDevUser(this string code) => DevUserList.Any(x => x.Code == code);
+    public static DevUser GetDevUser(this string code) => code.IsDevUser() ? DevUserList.Find(x => x.Code == code) : DefaultDevUser;
 }
         
