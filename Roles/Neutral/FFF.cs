@@ -37,7 +37,7 @@ namespace TOHE.Roles.Neutral
             CanKillInfected = BooleanOptionItem.Create(Id + 18, "FFFCanKillInfected", true, TabGroup.NeutralRoles, false).SetParent(ChooseConverted);
             CanKillContagious = BooleanOptionItem.Create(Id + 19, "FFFCanKillContagious", true, TabGroup.NeutralRoles, false).SetParent(ChooseConverted);
             CanKillAdmired = BooleanOptionItem.Create(Id + 20, "FFFCanKillAdmired", true, TabGroup.NeutralRoles, false).SetParent(ChooseConverted);
-            CanKillSoulless = BooleanOptionItemcCreate(Id + 22, "FFFCanKillSoulless", true, TabGroup.NeutralRoles, false).SetParent(ChooseConverted);
+            CanKillSoulless = BooleanOptionItem.Create(Id + 22, "FFFCanKillSoulless", true, TabGroup.NeutralRoles, false).SetParent(ChooseConverted);
         }
 
         public static void Init()
