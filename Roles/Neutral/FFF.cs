@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using static TOHE.Options;
 
@@ -22,7 +22,7 @@ namespace TOHE.Roles.Neutral
         public static OptionItem CanKillEgoists;
         public static OptionItem CanKillInfected;
         public static OptionItem CanKillContagious;
-
+        public static OptionItem CanKillSoulless;
         public static bool isWon = false; // There's already a playerIdList, so replaced this with a boolean value
         public static void SetupCustomOption()
         {
@@ -37,6 +37,7 @@ namespace TOHE.Roles.Neutral
             CanKillInfected = BooleanOptionItem.Create(Id + 18, "FFFCanKillInfected", true, TabGroup.NeutralRoles, false).SetParent(ChooseConverted);
             CanKillContagious = BooleanOptionItem.Create(Id + 19, "FFFCanKillContagious", true, TabGroup.NeutralRoles, false).SetParent(ChooseConverted);
             CanKillAdmired = BooleanOptionItem.Create(Id + 20, "FFFCanKillAdmired", true, TabGroup.NeutralRoles, false).SetParent(ChooseConverted);
+            CanKillSoulless = BooleanOptionItemcCreate(Id + 22, "FFFCanKillSoulless", true, TabGroup.NeutralRoles, false).SetParent(ChooseConverted);
         }
 
         public static void Init()
@@ -81,6 +82,7 @@ namespace TOHE.Roles.Neutral
                     || ((target.Is(CustomRoles.Infected) || target.Is(CustomRoles.Infectious)) && CanKillInfected.GetBool())
                     || ((target.Is(CustomRoles.Contagious) || target.Is(CustomRoles.Virus)) && CanKillContagious.GetBool())
                     || ((target.Is(CustomRoles.Admired) || target.Is(CustomRoles.Admirer)) && CanKillAdmired.GetBool())
+                    || ((target.Is(CustomRoles.Soulless)|| target.Is(CustomRoles.CursedSoul)) && CanKillSoulless.GetBool())
                     )
                 {
                     if (killer.RpcCheckAndMurder(target)) isWon = true; // Only win if target can be killed - this kills the target if they can be killed
@@ -118,7 +120,8 @@ namespace TOHE.Roles.Neutral
                 CustomRoles.Jackal or
                 CustomRoles.Virus or
                 CustomRoles.Infectious or
-                CustomRoles.Admirer
+                CustomRoles.Admirer or
+                CustomRoles.CursedSoul
                 => true,
 
                 _ => false,
