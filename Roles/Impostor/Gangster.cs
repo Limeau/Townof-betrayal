@@ -24,6 +24,10 @@ public static class Gangster
     public static OptionItem MarshallCanBeMadmate;
     public static OptionItem FarseerCanBeMadmate;
     public static OptionItem RetributionistCanBeMadmate;
+    public static Optionitem KeeperCanBeMadmate;
+    public static OptionItem PresidentCanBeMadmate;
+    public static OptionItem SwapperCanBeMadmate;
+    
 
     public static Dictionary<byte, int> RecruitLimit = new();
 
@@ -42,7 +46,9 @@ public static class Gangster
         MarshallCanBeMadmate = BooleanOptionItem.Create(Id + 18, "GanMarshallCanBeMadmate", false, TabGroup.ImpostorRoles, false).SetParent(Options.CustomRoleSpawnChances[CustomRoles.Gangster]);
         FarseerCanBeMadmate = BooleanOptionItem.Create(Id + 19, "GanFarseerCanBeMadmate", false, TabGroup.ImpostorRoles, false).SetParent(Options.CustomRoleSpawnChances[CustomRoles.Gangster]);
         RetributionistCanBeMadmate = BooleanOptionItem.Create(Id + 20, "GanRetributionistCanBeMadmate", false, TabGroup.ImpostorRoles, false).SetParent(Options.CustomRoleSpawnChances[CustomRoles.Gangster]);
-
+        KeeperCanBeMadmate = BooleanOptionItem.Create(Id + 21, "GanKeeperBeMadmate", false, TabGroup.ImpostorRoles, false).SetParent(Options.CustomRolesSpawnChances[CustomRoles.Gangster]);
+        PresidentCanBeMadmate = BooleanOptionItem.Create(Id + 22, "GanPersidentBeMadmate", false, TabGroup.ImpostorRoles, false).SetParent(Options.CustomRolesSpawnChances[CustomRoles.Gangster]);
+        SwapperCanBeMadmate = BooleanOptionItem.Create(Id + 23, "GanSwapperBeMadmate", false, TabGroup.ImpostorRoles, false).SetParent(Options.CustomRolesSpawnChances[CustomRoles.Gangster]);
     }
     public static void Init()
     {
